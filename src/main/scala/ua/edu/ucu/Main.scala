@@ -9,7 +9,15 @@ object Main {
   }
 }
 
+
 object MyApp extends App {
   println("Hello World!")
+  for {
+    ch <- "abcd"
+  } yield ch
+
+  1 -> "1"
+
+  1.doubleValue()
 }
 

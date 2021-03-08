@@ -23,4 +23,6 @@ object Eval {
 
     val result: Rational = eval(BinExpr("+", Constant(new Rational(18, 27)), Inv(Constant(new Rational(1, 2)))))
     println(result)
+
+  (BinExpr("*", Constant(new Rational(-1, 1)), Constant(result)): Expr) == (Inv(Constant(result)): Expr)
 }
