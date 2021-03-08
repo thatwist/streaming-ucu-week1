@@ -9,9 +9,7 @@ def factorial(n: Int): Int = ???
 import scala.annotation.tailrec
 
 //@tailrec
-def sum(f: Int => Int)(a: Int, b: Int): Int = {
-  if (a == b) a else f(a) + sum(f)(a + 1, b)
-}
+def sum(f: Int => Int)(a: Int, b: Int): Int = ???
 
 // Ex #11
 // rewrite sum function to be tail-recursive
@@ -19,10 +17,10 @@ import scala.annotation.tailrec
 def sumTR(f: Int => Int)(a: Int, b: Int): Int = {
   @tailrec
   def iter(a: Int, result: Int): Int = {
-    if (a > b) result
-    else iter(a + 1, result + f(a))
+    if (???) ???
+    else iter(???, ???)
   }
-  iter(a, 0)
+  iter(???, ???)
 }
 
 sumTR(_ * 2)(1, 3)

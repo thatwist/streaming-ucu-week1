@@ -4,26 +4,15 @@
 // using for-comprehension
 def filter(
             list: List[Int],
-            f: Int => Boolean): List[Int] = {
-  for {
-    i <- list
-    j <- 1 to 10
-    if f(i)
-  } yield i
-}
+            f: Int => Boolean): List[Int] = ???
 
 val ints = List(1,2,3,4,5,6,7,8,9)
 val f: Int => Boolean = _ % 2 == 0
 assert(filter(ints, f) == List(2,4,6,8))
 
-def head(list: List[Int]): Int = {
-  list match {
-    case Nil => throw new Error
-    case head :: t => head
-  }
-}
-
+def head(list: List[Int]): Int = ???
 head(1 :: 2 :: 3 :: Nil)
+
 // def sum(list: List[Int]): Int = ???
 
 // Ex #2.1
